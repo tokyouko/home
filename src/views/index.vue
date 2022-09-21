@@ -1,17 +1,19 @@
 <template>
     <div class="container">
-        <header>hello , welcome to my little house</header>
-        <main></main>
-        <footer></footer>
+        <section>
+            hello , welcome to my little house
+            <button @click="enter"> 进入 </button>
+        </section>
     </div>
 </template>
 <script setup lang="ts">
-
-</script>
+import router from '@/router';
+const enter = () => {
+    router.push('/main')
+}
+</script> 
     
 <style>
-.container {
-    background-color: #fff;
-}
+
 </style>
     
